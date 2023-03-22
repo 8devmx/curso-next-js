@@ -1,0 +1,23 @@
+.header {
+  max-width: 1280px;
+  margin: auto;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: var(--fs-20);
+  color: var(--black);
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navbar a {
+  color: var(--black);
+}

@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 75px;
+}
+
+.hero__description {
+  min-height: 564px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+}
+
+.hero__services {
+  line-height: 1.5;
+}
+
+.hero__title {
+  font-size: 100px;
+}
+
+.hero__paragraph {
+  font-size: 17px;
+  line-height: 1.68;
+}
