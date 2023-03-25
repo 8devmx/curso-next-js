@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout from '@/components/layout'
 import Hero from '@/components/hero'
 import Clients from '@/components/clients'
+import Services from '@/components/services'
+import Work from '@/components/work'
 
 export default function Home () {
   return (
@@ -15,6 +17,8 @@ export default function Home () {
       <Layout>
         <Hero />
         <Clients />
+        <Services />
+        <Work />
       </Layout>
     </>
   )

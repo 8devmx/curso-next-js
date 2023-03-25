@@ -1,0 +1,24 @@
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+
+.workTitle {
+  padding-top: 125px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.work h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: var(--fs-20);
+  line-height: 1.5;
+}
+
+.work p {
+  font-size: 17px;
+  line-height: 1.68;
+}
