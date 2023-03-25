@@ -11,7 +11,7 @@
 .textarea {
   resize: none;
   height: 215px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   font-family: var(--font-principal);
 }
 
@@ -34,11 +34,11 @@
 }
 
 .alert {
-  border: 1px solid green;
+  border: none;
   background: lightgreen;
-  color: var(--black);
+  color: green;
   padding: 20px 10px;
   border-radius: 4px;
-  margin-top: 15px;
   text-align: center;
+  margin-bottom: 35px;
 }

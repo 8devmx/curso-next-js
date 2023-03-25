@@ -1,7 +1,7 @@
 import styles from '@/styles/Form.module.css'
 import { useState } from 'react'
 
-const Form = () => {
+const Form = ({ cart }) => {
   const [message, setMessage] = useState('')
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -23,9 +23,13 @@ const Form = () => {
   return (
     <form action='https://formspree.io/f/xoqzlyek' method='POST' onSubmit={handleSubmit}>
       <input placeholder='Name' type='text' id='name' name='name' className={styles.input} />
+      <input type='text' placeholder='Subject' id='subject' name='subject' className={styles.input} value={cart.length > 0 ? `Estoy interesado en los servicios: ${cart}` : ''} />
       <input placeholder='Email' type='email' id='email' name='email' className={styles.input} />
       <textarea placeholder='Type your message here' name='message' id='message' className={`${styles.input} ${styles.textarea}`} />
-      <p className={styles.alert}>{message}</p>
+      {
+        (message !== '') &&
+        <p className={styles.alert}>{message}</p>
+      }
       <button className={styles.button}>Submit</button>
     </form>
   )

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/layout'
 import Hero from '@/components/hero'
@@ -6,6 +7,16 @@ import Services from '@/components/services'
 import Work from '@/components/work'
 
 export default function Home () {
+  const [cart, setCart] = useState([])
+
+  const addToCart = (service) => {
+    if (cart.includes(service)) {
+      setCart(cart.filter(allServices => allServices !== service))
+      return false
+    }
+    setCart([...cart, service])
+  }
+
   return (
     <>
       <Head>
@@ -14,10 +25,10 @@ export default function Home () {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Layout>
+      <Layout cart={cart}>
         <Hero />
         <Clients />
-        <Services />
+        <Services addToCart={addToCart} cart={cart} />
         <Work />
       </Layout>
     </>
