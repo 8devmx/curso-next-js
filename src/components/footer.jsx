@@ -1,7 +1,7 @@
 import Form from './Form'
 import styles from '@/styles/Footer.module.css'
 
-const Footer = () => {
+const Footer = ({ cart }) => {
   return (
     <footer>
       <div className={styles.description}>
@@ -13,7 +13,7 @@ const Footer = () => {
           <a href='#'>Tiktok</a>
         </div>
       </div>
-      <Form />
+      <Form cart={cart} />
     </footer>
   )
 }

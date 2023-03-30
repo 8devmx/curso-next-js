@@ -1,12 +1,12 @@
 import Navigation from './navigation'
 import Footer from './footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, cart }) => {
   return (
     <>
       <Navigation />
       <main id='main'>{children}</main>
-      <Footer />
+      <Footer cart={cart} />
     </>
   )
 }
