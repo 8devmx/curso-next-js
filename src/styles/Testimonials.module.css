@@ -1,0 +1,31 @@
+.testimonial {
+  height: 400px;
+  background: #F3F3F3;
+  padding: 25px 28px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 15px) !important;
+}
+
+.testimonials__title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 125px;
+}
+
+.author {
+  display: flex;
+  gap: 18px;
+}
+
+.testimonial h3 {
+  font-size: var(--fs-20);
+  line-height: 1.3;
+}
+
+.author p {
+  line-height: 1.68;
+  font-size: 17px;
+}
